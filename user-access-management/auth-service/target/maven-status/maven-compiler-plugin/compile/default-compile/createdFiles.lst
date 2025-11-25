@@ -18,4 +18,6 @@ com\r2s\auth\dto\response\AuthResponse$AuthResponseBuilder.class
 com\r2s\auth\security\JwtUtil.class
 com\r2s\auth\dto\ApiResponse.class
 com\r2s\auth\entity\Role.class
+com\r2s\auth\enums\TokenType.class
+com\r2s\auth\controller\RoleController.class
 com\r2s\auth\security\CustomDetailsService.class

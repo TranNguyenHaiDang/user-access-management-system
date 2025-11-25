@@ -13,6 +13,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter;
+import org.springframework.security.oauth2.server.resource.authentication.JwtGrantedAuthoritiesConverter;
 import org.springframework.security.web.SecurityFilterChain;
 
 import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
@@ -56,10 +58,35 @@ public class SecurityConfig {
                         .authenticated()
                 )
                 .oauth2ResourceServer((oauth2) -> oauth2.jwt(jwtConfigurer -> jwtConfigurer
-                        .decoder(jwtDecoderConfig)))
+                        .decoder(jwtDecoderConfig)
+                        .jwtAuthenticationConverter(jwtAuthenticationConverter())))
                 .sessionManagement(session -> session.sessionCreationPolicy(STATELESS));
 
         return http.build();
+    }
+
+    //Bên trong convert():
+    //   ├─ jwtGrantedAuthoritiesConverter.convert(jwt)
+    //   │    → đọc claim "roles" hoặc "scope"
+    //   │    → biến thành List<GrantedAuthority>: [ADMIN, USER]
+    //   │
+    //   ├─ getPrincipal(jwt) → lấy "sub" hoặc claim bạn config
+    //   │
+    //   └─ return new JwtAuthenticationToken(jwt, authorities, principal)
+    //
+    // Token được đặt vào SecurityContext:
+    //   SecurityContextHolder.getContext().getAuthentication().getAuthorities()
+    //   → [ADMIN, USER]
+    //   → @PreAuthorize, hasRole(), hasAuthority() mới hoạt động!
+    @Bean
+    public JwtAuthenticationConverter jwtAuthenticationConverter() {
+        JwtGrantedAuthoritiesConverter authoritiesConverter = new JwtGrantedAuthoritiesConverter();
+        authoritiesConverter.setAuthorityPrefix("");           // không thêm ROLE_ (vì bạn đã thêm trong token)
+        authoritiesConverter.setAuthoritiesClaimName("roles"); // BẮT BUỘC: đọc từ claim "roles"
+
+        JwtAuthenticationConverter converter = new JwtAuthenticationConverter();
+        converter.setJwtGrantedAuthoritiesConverter(authoritiesConverter);
+        return converter;
     }
 
     @Bean

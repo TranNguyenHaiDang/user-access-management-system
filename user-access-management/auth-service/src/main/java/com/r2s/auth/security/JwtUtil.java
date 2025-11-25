@@ -11,6 +11,7 @@ import com.r2s.auth.exception.BusinessException;
 import com.r2s.auth.exception.ErrorCode;
 import lombok.experimental.NonFinal;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Component;
 
 import java.text.ParseException;
@@ -62,6 +63,7 @@ public class JwtUtil {
                 .expirationTime(expiredTime)
                 .jwtID(UUID.randomUUID().toString())
                 .claim("type", isRefreshToken ? TokenType.REFRESH_TOKEN : TokenType.ACCESS_TOKEN)
+                .claim("roles", buildScope(user))
                 .build();
         Payload payload = new Payload(claimsSet.toJSONObject());
         JWSObject jwsObject = new JWSObject(header, payload);
@@ -91,5 +93,12 @@ public class JwtUtil {
         } catch (ParseException | JOSEException e) {
             throw new BusinessException(ErrorCode.TOKEN_INVALID);
         }
+    }
+    private String buildScope(User user) {
+        StringJoiner joiner = new StringJoiner(" ");
+        for (GrantedAuthority authority : user.getAuthorities()) {
+            joiner.add(authority.getAuthority());
+        }
+        return joiner.toString();
     }
 }
