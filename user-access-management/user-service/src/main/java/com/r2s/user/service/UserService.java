@@ -1,12 +1,12 @@
 package com.r2s.user.service;
 
+import com.r2s.core.entity.User;
+import com.r2s.core.enums.UserStatus;
+import com.r2s.core.exception.BusinessException;
+import com.r2s.core.exception.ErrorCode;
+import com.r2s.core.repository.UserRepository;
 import com.r2s.user.dto.request.UpdateUserRequest;
 import com.r2s.user.dto.response.UserResponse;
-import com.r2s.user.entity.User;
-import com.r2s.user.enums.UserStatus;
-import com.r2s.user.exception.BusinessException;
-import com.r2s.user.exception.ErrorCode;
-import com.r2s.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

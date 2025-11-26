@@ -1,7 +1,6 @@
 package com.r2s.auth.controller;
 
-import com.r2s.auth.dto.ApiResponse;
-import org.springframework.http.ResponseEntity;
+import com.r2s.core.dto.ApiResponse;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

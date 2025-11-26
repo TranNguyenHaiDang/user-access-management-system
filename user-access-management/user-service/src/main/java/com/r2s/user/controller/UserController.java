@@ -1,6 +1,6 @@
 package com.r2s.user.controller;
 
-import com.r2s.user.dto.ApiResponse;
+import com.r2s.core.dto.ApiResponse;
 import com.r2s.user.dto.request.UpdateUserRequest;
 import com.r2s.user.dto.response.UserResponse;
 import com.r2s.user.service.UserService;

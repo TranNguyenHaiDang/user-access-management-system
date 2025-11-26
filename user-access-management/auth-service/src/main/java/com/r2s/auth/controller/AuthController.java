@@ -1,10 +1,10 @@
 package com.r2s.auth.controller;
 
-import com.r2s.auth.dto.ApiResponse;
 import com.r2s.auth.dto.request.LoginRequest;
 import com.r2s.auth.dto.request.RegisterRequest;
 import com.r2s.auth.dto.response.AuthResponse;
 import com.r2s.auth.service.AuthService;
+import com.r2s.core.dto.ApiResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
