@@ -4,25 +4,8 @@ server:
     context-path: /api/v1
 
 spring:
+  profiles:
+    active: prod
+
   application:
     name: auth-service
-
-  datasource:
-    # BỎ serverTimezone - PostgreSQL không dùng parameter này
-    url: jdbc:postgresql://localhost:5433/auth-service
-    username: postgres
-    password: devtran
-    driver-class-name: org.postgresql.Driver
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-
-jwt:
-  secret-key: +0ZBTIsHwW3/OSZzKzARBsNNU23M65nUKE/39fSYBHaVSoDnIb9c90AHxRBkEN+y
-  valid-duration: 3600
-  refreshable-duration: 36000

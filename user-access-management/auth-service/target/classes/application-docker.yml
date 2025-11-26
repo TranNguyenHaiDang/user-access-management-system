@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres-db:5432/auth-service
+    username: postgres
+    password: devtran
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+jwt:
+  secret-key: 124GHnOgUWPMfB7ykdugUFj9zxUdQSyhppxB9t2seAMW+ylqgVtitHoZ3BBrVGGq/LHKdNyWJ2FMOePliKsiQg==
+  valid-duration: 3600
+  refreshable-duration: 36000

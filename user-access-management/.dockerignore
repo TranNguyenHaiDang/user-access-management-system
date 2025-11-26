@@ -1,0 +1,14 @@
+**/target/
+**/*.iml
+../.idea
+
+
+#**/target/     →  Khớp với:
+#                  - /target/
+#                  - /module-a/target/
+#                  - /src/module-b/target/
+#
+#**/*.iml       →  Khớp với:
+#                  - /project.iml
+#                  - /auth-service/auth.iml
+#                  - /a/b/c/file.iml
