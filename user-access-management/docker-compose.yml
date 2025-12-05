@@ -13,8 +13,6 @@ services:
       - mysql_data:/var/lib/mysql
 
   user-access-management:
-    build:
-      dockerfile: Dockerfile
     container_name: user-access-management
     ports:
       - "8081:8081"

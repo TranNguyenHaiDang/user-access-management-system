@@ -5,104 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d920ed7-733c-43b6-a121-143a378db56b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/r2s/auth/AuthServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/r2s/auth/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/r2s/auth/controller/RoleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/r2s/auth/dto/request/LoginRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/r2s/auth/dto/request/RegisterRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/r2s/auth/dto/response/AuthResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/r2s/auth/service/AuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application-docker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/auth-service-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/application-docker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/r2s/auth/AuthServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/r2s/auth/controller/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/r2s/auth/controller/RoleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/r2s/auth/dto/request/LoginRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/r2s/auth/dto/request/RegisterRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/r2s/auth/dto/response/AuthResponse$AuthResponseBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/r2s/auth/dto/response/AuthResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/com/r2s/auth/service/AuthService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/config/JwtDecoderConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/dto/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/enums/TokenType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/enums/UserStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/exception/BusinessException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/exception/ErrorCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/security/CustomDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/r2s/core/security/JwtUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/config/JwtDecoderConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/config/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/dto/ApiResponse$ApiResponseBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/dto/ApiResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/entity/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/entity/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/enums/TokenType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/enums/UserStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/exception/BusinessException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/exception/ErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/exception/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/security/CustomDetailsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/r2s/core/security/JwtUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/core-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/r2s/user/UserServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/r2s/user/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/r2s/user/dto/request/UpdateUserRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/r2s/user/dto/response/UserResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/r2s/user/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application-docker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/application-docker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/r2s/user/UserServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/r2s/user/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/r2s/user/dto/request/UpdateUserRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/r2s/user/dto/response/UserResponse$UserResponseBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/r2s/user/dto/response/UserResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/r2s/user/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/user-service-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/user-service-1.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-docker.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/UserAccessManagementApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/config/JwtDecoderConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/controller/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/dto/ApiResponse$ApiResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/dto/ApiResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/dto/request/LoginRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/dto/request/RegisterRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/dto/request/UpdateUserRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/dto/response/AuthResponse$AuthResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/dto/response/AuthResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/dto/response/UserResponse$UserResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/dto/response/UserResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/entity/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/enums/TokenType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/enums/UserStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/exception/BusinessException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/exception/ErrorCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/security/CustomDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/security/JwtUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/service/AuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devtran/service/UserService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +234,7 @@
       <workItem from="1764090695935" duration="4853000" />
       <workItem from="1764131719573" duration="10143000" />
       <workItem from="1764952870705" duration="2446000" />
-      <workItem from="1764955367699" duration="677000" />
+      <workItem from="1764955367699" duration="1061000" />
     </task>
     <servers />
   </component>
