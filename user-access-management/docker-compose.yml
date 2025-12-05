@@ -1,41 +1,29 @@
 version: '3.8'
 
 services:
-  postgres-db:
-    image: postgres:15
-    container_name: postgres-db
+  mysql-db:
+    image: mysql:8.0
+    container_name: mysql-db
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: devtran
-      POSTGRES_DB: auth-service
+      MYSQL_ROOT_PASSWORD: devtran
+      MYSQL_DATABASE: user-access-management
     ports:
-      - "5433:5432"
+      - "3306:3306"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - mysql_data:/var/lib/mysql
 
-  auth-service:
+  user-access-management:
     build:
-      context: ./auth-service
       dockerfile: Dockerfile
-    container_name: auth-service
+    container_name: user-access-management
     ports:
       - "8081:8081"
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     depends_on:
-      - postgres-db
-
-  user-service:
-    build:
-      context: ./user-service
-      dockerfile: Dockerfile
-    container_name: user-service
-    ports:
-      - "8082:8082"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    depends_on:
-      - postgres-db
+      - mysql-db
 
 volumes:
-  postgres_data:
+  mysql_data:
+
+
