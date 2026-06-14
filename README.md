@@ -1,4 +1,4 @@
-<![CDATA[# 🔐 User Access Management System
+# 🔐 User Access Management System
 
 <div align="center">
 
@@ -207,7 +207,6 @@ This project is for educational and portfolio purposes.
 
 <div align="center">
 
-**Built with ❤️ by [devtran](https://github.com/devtran)**
+**Built with ❤️ using Spring Boot**
 
 </div>
-]]>
